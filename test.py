@@ -1,9 +1,8 @@
 import cv2 as cv
-from rl.roblox_agent import RobloxAgent
+from rl.voxlblade_agent import VoxlbladeAgent
 
-player = RobloxAgent()
+player = VoxlbladeAgent()
 
-# Recording the screen
 while True:
     player.get_observation()
     if cv.waitKey(1) == ord('q'):

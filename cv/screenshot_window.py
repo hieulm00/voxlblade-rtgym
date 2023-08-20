@@ -1,9 +1,8 @@
 import pygetwindow
 import pyautogui
+from time import sleep
 
 def screenshot_window():
-    roblox = pygetwindow.getWindowsWithTitle('Roblox')[0]
-    if roblox.title != 'Roblox':
-        raise 'Window "Roblox" is not open!'
+    roblox = pygetwindow.getWindowsWithTitle('roblox')[0]
     roblox.activate()
     return pyautogui.screenshot(region=(roblox.left, roblox.top, roblox.width, roblox.height))

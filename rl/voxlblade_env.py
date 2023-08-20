@@ -1,6 +1,6 @@
 from rtgym import RealTimeGymInterface
 
-class RobloxEnv(RealTimeGymInterface):
+class VoxlbladeEnv(RealTimeGymInterface):
     def __init__(self):
         pass
     def get_observation_space():
