@@ -9,4 +9,9 @@ class RobloxAgent():
     def get_observation(self):
         screenshot = np.array(cv_utils.screenshot_window())
         screenshot = cv.cvtColor(screenshot, cv.COLOR_RGB2BGR)
-        cv.imshow('VoxlBlade Gym', screenshot)
+
+        width = screenshot.shape[1]
+        
+        # y-range, x-range
+        health_bar = screenshot[55:70, (width - 190):(width - 80)]
+        cv.imshow('Health Bar', health_bar)
