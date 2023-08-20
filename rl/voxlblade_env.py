@@ -1,7 +1,9 @@
 from rtgym import RealTimeGymInterface
+from rl.voxlblade_agent import VoxlbladeAgent
 
 class VoxlbladeEnv(RealTimeGymInterface):
     def __init__(self):
+        self.agent = VoxlbladeAgent()
         pass
     def get_observation_space():
         pass
