@@ -13,6 +13,6 @@ class VoxlbladeAgent():
         if cv_utils.health_bar_exists(screenshot):
             health = cv_utils.get_health_from_bar(screenshot)
         else:
-            health = 100
+            health = 100.0
             
         return health

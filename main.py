@@ -25,7 +25,7 @@ env = gymnasium.make('real-time-gym-v1', config=conf)
 
 obs, info = env.reset()
 
-for _ in range(1000):
+for _ in range(1):
     action = env.action_space.sample()
     obs, rew, terminated, truncated, info = env.step(action)
 
