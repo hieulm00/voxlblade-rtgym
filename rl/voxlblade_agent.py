@@ -14,4 +14,5 @@ class VoxlbladeAgent():
             health = cv_utils.get_health_from_bar(screenshot)
         else:
             health = 100
-        print(health)
+            
+        return health
